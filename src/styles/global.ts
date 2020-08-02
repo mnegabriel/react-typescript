@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
+import globalBackground from '../assets/Vector.svg';
+
 export default createGlobalStyle`
   * {
     margin: 0;
@@ -8,7 +10,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
   body{
-    background-color:#333333
+    background:#333333 url(${globalBackground}) no-repeat 70% top;
   }
   body, input, button {
     font: 16px Roboto, sans-serif;
